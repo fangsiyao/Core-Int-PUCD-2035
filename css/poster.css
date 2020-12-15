@@ -1,0 +1,166 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400..900&display=swap');
+
+
+/*! minireset.css v0.0.6 | MIT License */ html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}td:not([align]),th:not([align]){text-align:left}
+
+
+html {
+  font-size: .75rem;
+  font-family: 'Work Sans', serif;
+  background: #fff;
+}
+
+body {
+  padding:5rem 0;
+  color:#fff;
+  background: #fff;
+
+}
+
+    main {
+        max-width:60vw;
+        margin:0 auto;
+        padding:0;
+    }
+
+
+.grid-set-right {
+  display: grid;
+  grid-template-columns: 1fr 2fr 4fr 8fr 16fr;
+  grid-auto-rows: min-content;
+  grid-gap:0rem;
+  padding:0;
+  background:#000;
+}
+
+
+img {
+    width: 100%;
+}
+
+article {
+  padding:0;
+  margin:0;
+}
+
+.grid-item {
+  font-size: 1em;
+  text-align: center;
+  padding-top:1rem;
+}
+
+
+.gsr-1 {
+  grid-column:1;
+}
+.gsr-2 {
+  grid-column:2;
+}
+.gsr-3 {
+  grid-column:3;
+}
+.gsr-4 {
+  grid-column:4;
+}
+.gsr-5 {
+  grid-column:5;
+}
+
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Work Sans', serif;
+  text-transform:uppercase;
+  margin:0;
+  padding:0;
+  line-height:.5;
+}
+
+h1 {
+  font-size:16rem;
+  font-weight:700;
+}
+
+h2 {
+  font-size:8rem;
+  text-transform:uppercase;
+  font-weight:700;
+
+}
+h3 {
+  font-size:4rem;
+  font-weight:400;
+  font-weight:700;
+
+}
+h4 {
+  font-size:2rem;
+  font-weight:700;
+
+}
+
+h5 {
+  font-size:1rem;
+  font-weight:700;
+}
+
+
+.vertical-text-top {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+
+
+
+
+/* ===== == = === 48em (768px) === = == ===== */
+
+@media only screen and (min-width : 48em) {
+
+  html {
+    font-size: 1.5rem;
+    font-family: 'Work Sans', serif;
+    background-color: #000;
+  }
+
+  main {
+    max-width:70vw;
+    margin:0 auto;
+    padding:0;}
+}
+
+/* ===== == = === 68.75em (1100px) === = == ===== */
+
+@media only screen and (min-width : 68.75em) {
+
+  html {
+    font-size: 2rem;
+    font-family: 'Work Sans', serif;
+    background-color: #000;
+  }
+  
+  main {
+    max-width:60vw;
+    margin:0 auto;
+    padding:0;}
+}
+
+/* ===== == = === 81.25em (1300px) === = == ===== */
+
+@media only screen and (min-width : 81.25em) {
+
+  html {
+    font-size: 3rem;
+    font-family: 'Work Sans', serif;
+    background-color: #000;
+  }
+  
+  main {
+    max-width:50vw;
+    margin:0 auto;
+    padding:0;}
+ 
+}
+
+
