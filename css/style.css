@@ -3,8 +3,8 @@
 
 html {
   font-size: 1rem;
-  font-family: 'Merriweather', serif;
-  background-color: #eaeaea;
+  font-family: 'raleway', serif;
+  background-color: #abae6c;
 }
 
 body {
@@ -58,7 +58,7 @@ main {
 
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'lobster', sans-serif;
   margin-bottom:1rem;
 }
 
@@ -81,7 +81,7 @@ h4 {
 
 li {
   font-size: 1.25rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'lobster', sans-serif;
   line-height: 1.5;
   padding: .5rem 0;
 }
@@ -94,7 +94,7 @@ p {
 
 .location {
   font-size: 1rem;
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'lobster', sans-serif;
   text-transform: uppercase;
   line-height: 1.5;
 }
@@ -106,6 +106,6 @@ img {
 
 figcaption {
   font-size: .875rem;
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'lobster', sans-serif;
   padding-top: 1rem;
 }
