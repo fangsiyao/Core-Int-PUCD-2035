@@ -5,8 +5,8 @@
 
 html {
   font-size: 1rem;
-  font-family: 'Lora', serif;
-  background-color: #fff;
+  font-family: 'Raleway', serif;
+  background-color: #3e3f2c;
 }
 
 body {
@@ -16,12 +16,12 @@ body {
 
 a {
   text-decoration: underline;
-  color: #ae7f3d;
+  color: #bec17a;
 }
 
 a:hover {
   text-decoration: none;
-  color: #ae7f3d;
+  color: #bec17a;
 }
 
 
@@ -34,7 +34,7 @@ a:hover {
 .grid-set {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap:1.5rem;
+  grid-gap:2.5rem;
   padding:0 1rem;
 }
 
@@ -55,12 +55,12 @@ img {
 
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Lora', serif;
+  font-family: 'Raleway', serif;
   margin-bottom:.5rem;
 }
 
 h1 {
-  font-size:2rem;
+  font-size:1rem;
   font-weight:700;
   font-style: italic;
 }
@@ -85,7 +85,7 @@ li {
 }
 
 .artist-name {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   line-height: 1;
   font-weight:700;
   margin-top:.5rem;
@@ -97,7 +97,7 @@ li {
 
 
 p {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 1.125rem;
   line-height: 1.5;
   margin-bottom:1rem;
