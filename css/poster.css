@@ -1,166 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Open+Sans:wght@300&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400..900&display=swap');
-
-
-/*! minireset.css v0.0.6 | MIT License */ html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}td:not([align]),th:not([align]){text-align:left}
-
-
-html {
-  font-size: .75rem;
-  font-family: 'Work Sans', serif;
-  background: #fff;
+:root {
+  --colorTheme: #f0f0f0;
 }
 
 body {
-  padding:5rem 0;
-  color:#fff;
-  background: #fff;
-
+  margin: 0;
 }
-
-    main {
-        max-width:60vw;
-        margin:0 auto;
-        padding:0;
-    }
-
-
-.grid-set-right {
-  display: grid;
-  grid-template-columns: 1fr 2fr 4fr 8fr 16fr;
-  grid-auto-rows: min-content;
-  grid-gap:0rem;
-  padding:0;
-  background:#000;
-}
-
 
 img {
-    width: 100%;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-article {
-  padding:0;
-  margin:0;
+sup {
+  font-size: 0.6em;
 }
 
-.grid-item {
-  font-size: 1em;
-  text-align: center;
-  padding-top:1rem;
+.text-light {
+  font-weight: 300;
 }
 
-
-.gsr-1 {
-  grid-column:1;
-}
-.gsr-2 {
-  grid-column:2;
-}
-.gsr-3 {
-  grid-column:3;
-}
-.gsr-4 {
-  grid-column:4;
-}
-.gsr-5 {
-  grid-column:5;
+.text-bold {
+  font-weight: bold;
 }
 
-
-h1, h2, h3, h4, h5 {
-  font-family: 'Work Sans', serif;
-  text-transform:uppercase;
-  margin:0;
-  padding:0;
-  line-height:.5;
+.grid {
+  background: var(--colorTheme);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  display: grid;
+  grid-gap: 3em;
+  min-height: 150vh;
+  padding: 1em;
+  text-transform: uppercase;
 }
 
-h1 {
-  font-size:16rem;
-  font-weight:700;
+.grid span {
+  display: block;
 }
 
-h2 {
-  font-size:8rem;
-  text-transform:uppercase;
-  font-weight:700;
-
-}
-h3 {
-  font-size:4rem;
-  font-weight:400;
-  font-weight:700;
-
-}
-h4 {
-  font-size:2rem;
-  font-weight:700;
-
+.cover img {
+  height: 100%;
+  object-fit: cover;
 }
 
-h5 {
-  font-size:1rem;
-  font-weight:700;
+.title .text-bold {
+  font-family: 'Abel', sans-serif;
 }
 
-
-.vertical-text-top {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
+.title--primary,
+.title--secondary,
+.info {
+  z-index: 2;
 }
 
+.title--secondary {
+  text-align: right;
+}
 
+.title--secondary .text-bold {
+  font-size: max(6vw, 40px);
+}
 
+.title--primary .text-bold {
+  font-size: max(10vw, 60px);
+}
 
+.info {
+  grid-column: 1/2;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-/* ===== == = === 48em (768px) === = == ===== */
+.info li {
+  margin-top: 1.5em;
+}
 
-@media only screen and (min-width : 48em) {
-
-  html {
-    font-size: 1.5rem;
-    font-family: 'Work Sans', serif;
-    background-color: #000;
+@media (min-width: 860px) {
+  .grid {
+    grid-template-rows: minmax(1em, auto) max-content 1fr 3em minmax(1em, auto);
+    grid-template-columns: 4fr repeat(4, 1fr) 4fr;
+    grid-gap: 0 10px;
+    height: 100vh;
+    min-height: 600px;
   }
 
-  main {
-    max-width:70vw;
-    margin:0 auto;
-    padding:0;}
-}
-
-/* ===== == = === 68.75em (1100px) === = == ===== */
-
-@media only screen and (min-width : 68.75em) {
-
-  html {
-    font-size: 2rem;
-    font-family: 'Work Sans', serif;
-    background-color: #000;
+  .title--secondary {
+    grid-row: 2/3;
+    grid-column: 1 / 3;
   }
-  
-  main {
-    max-width:60vw;
-    margin:0 auto;
-    padding:0;}
-}
 
-/* ===== == = === 81.25em (1300px) === = == ===== */
-
-@media only screen and (min-width : 81.25em) {
-
-  html {
-    font-size: 3rem;
-    font-family: 'Work Sans', serif;
-    background-color: #000;
+  .text--secondary .text-light {
+    /* grid-column: 2/3; */
   }
-  
-  main {
-    max-width:50vw;
-    margin:0 auto;
-    padding:0;}
- 
+
+  .title--secondary .text-bold {
+    /* grid-column: 2/3; */
+  }
+
+  .title--primary {
+    grid-row: 4/6;
+    grid-column: 5/7;
+  }
+
+  .cover {
+    grid-row: 2/5;
+    grid-column: 2 / span 4;
+  }
+
+  .info {
+    grid-row: 3/5;
+    grid-column: 1/2;
+    align-self: flex-end;
+  }
 }
-
-
